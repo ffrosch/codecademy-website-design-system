@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400, 600, 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserratalternates/v17/mFTiWacfw6zH4dthXcyms1lPpC8I_b0juU0xQIXFB7xG.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --primary-color: #3f2305;
+  --secondary-color: #dfd7bf;
+  --accent-color: #f2ead3;
+  --background-color: #f5f5f5;
+  --error-color: indianred;
+  --success-color: hsl(72, 51%, 57%);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: "Montserrat Alternates";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:active {
+  color: var(--accent-color);
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 32px;
+  text-shadow: 0.1em 0.1em 2px var(--accent-color);
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.subtitle {
+  display: inline-block;
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  line-height: 2em;
+}
+
+main {
+  margin-bottom: auto;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1200px;
+}
+
+header,
+footer {
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+}
+
+header {
+  background-color: var(--secondary-color);
+  letter-spacing: 0.1em;
+}
+
+footer {
+  background-color: var(--accent-color);
+}
+
+section {
+  max-width: 1200px;
+  margin: 32px;
+  padding-right: 32px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px var(--accent-color);
+  background-color: white;
+}
+
+section > h2:first-child {
+  margin: 16px 0 0 16px;
+}
+
+/* Section Colors Start */
+
+#colors > ul {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.color-item {
+  box-sizing: border-box;
+  display: inline-block;
+  min-height: 80px;
+  min-width: 150px;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 8px 8px 0;
+  padding: 0 16px;
+}
+
+.code {
+  display: inline;
+  padding: 5px;
+  margin-left: -5px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  font-family: "Roboto Mono";
+}
+
+.primary-color {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.accent-color {
+  background-color: var(--accent-color);
+}
+
+.background-color {
+  background-color: var(--background-color);
+}
+
+/* Section Colors End */
+
+/* Section Fonts Start*/
+
+#fonts > ul {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.font-item {
+  display: inline-block;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat";
+  font-weight: 800;
+}
+
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates";
+  font-weight: 300;
+}
+
+.roboto {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+/* Section Fonts End */
+
+/* Section Text Styles Start */
+
+section#text-styles > .content {
+  padding-left: 32px;
+}
+
+/* Section Text Styles End */
