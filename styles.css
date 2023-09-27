@@ -1,3 +1,7 @@
+/* ##### */
+/* FONTS */
+/* ##### */
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -34,12 +38,22 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* ###### */
+/* COLORS */
+/* ###### */
+
 :root {
   --primary-color: #3f2305;
   --secondary-color: #dfd7bf;
   --accent-color: #f2ead3;
   --background-color: #f5f5f5;
 }
+
+/* ############### */
+/* GENERAL STYLING */
+/* ############### */
+
+/* Base Style */
 
 body {
   min-height: 100vh;
@@ -55,45 +69,7 @@ body {
   font-size: 16px;
 }
 
-a {
-  color: var(--primary-color);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
-a:active {
-  color: var(--accent-color);
-}
-
-h1 {
-  font-family: "Montserrat";
-  font-weight: 800;
-  font-size: 32px;
-  text-shadow: 0.1em 0.1em 2px var(--accent-color);
-}
-
-h2 {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 24px;
-}
-
-h3 {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.subtitle {
-  display: inline-block;
-  border-top: 1px solid var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
-  line-height: 2em;
-}
+/* Blocks */
 
 main {
   margin-bottom: auto;
@@ -135,13 +111,63 @@ section ul {
   padding: 0 32px;
 }
 
-/* Section Colors Start */
+/* Headlines */
 
-#colors > ul {
+h1 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 32px;
+  text-shadow: 0.1em 0.1em 2px var(--accent-color);
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Links */
+
+a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:active {
+  color: var(--accent-color);
+}
+
+/* Utility Classes */
+
+.subtitle {
+  display: inline-block;
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  line-height: 2em;
+}
+
+.flex-wrap {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+/* ################ */
+/* SPECIFIC STYLING */
+/* ################ */
+
+/* Section "Colors" */
 
 .color-item {
   box-sizing: border-box;
@@ -181,15 +207,7 @@ section ul {
   background-color: var(--background-color);
 }
 
-/* Section Colors End */
-
-/* Section Fonts Start*/
-
-#fonts > ul {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
+/* Section "Fonts" */
 
 .font-item {
   display: inline-block;
@@ -220,12 +238,8 @@ section ul {
   font-weight: 400;
 }
 
-/* Section Fonts End */
-
-/* Section Text Styles Start */
+/* Section "Text Styles" */
 
 section#text-styles > .content {
   padding-left: 32px;
 }
-
-/* Section Text Styles End */
